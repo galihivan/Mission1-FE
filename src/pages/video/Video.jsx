@@ -6,16 +6,16 @@ const Video = () => {
   return (
     <>
       <VideoHeader />
-      <div className="d-flex flex-row">
-        <div className="d-flex flex-column border w-75">
+      <div className="flex justify-center p-4">
+        <div className="relative w-full md:w-3/4 xl:w-2/3 pb-[56.25%] border rounded-lg overflow-hidden shadow-lg">
           <iframe
-            className="w-100 h-100"
+            className="absolute top-0 left-0 w-full h-full"
             src="https://www.youtube.com/embed/rfscVS0vtbw?si=uZgGxEGJSNq6sNLI"
             title="YouTube video player"
-            frameborder="0"
+            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
           ></iframe>
         </div>
       </div>
